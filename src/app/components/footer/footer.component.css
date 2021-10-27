@@ -1,0 +1,32 @@
+.footer{
+    height: 100px;
+    background-color: rgb(48, 43, 36);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    padding: 20px 25px;
+    margin-top: 10px;
+
+}
+.fab{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fas{
+    color: #fff;
+    font-size: 60px;
+    cursor: pointer; 
+    position: relative;
+    top: -13px;
+    left: 400px;
+}
+h3{
+    margin-top: 30px;
+    color: #fff;
+}

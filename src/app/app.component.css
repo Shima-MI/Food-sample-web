@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    justify-content: start;
+    align-content: flex-start;
+    width: 68%;
+    flex-flow: wrap;
+}
+h1{
+    animation-duration: 5s;
+    animation-name: animate;
+    animation-iteration-count: infinite;
+    margin-top: 20px;
+    font-weight: bold;
+}
+@keyframes animate {
+    from {
+      margin-left: 0;
+    }
+  
+    to {
+      margin-left: 250px;
+    }
+    
+  }

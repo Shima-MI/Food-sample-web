@@ -1,0 +1,19 @@
+
+<!-- <app-header-two></app-header-two> -->
+
+<app-header></app-header>
+
+<router-outlet></router-outlet>
+<app-box-news></app-box-news>
+
+<h1 class="animate"> Popular Recipes</h1>
+
+<div class="container">
+    <app-recipeslist *ngFor="let recipe of Recipes" [item]="recipe"></app-recipeslist>
+    
+</div>
+<app-taste></app-taste>
+
+<app-footer></app-footer>
+
+

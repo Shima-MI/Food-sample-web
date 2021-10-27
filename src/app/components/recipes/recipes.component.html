@@ -1,0 +1,58 @@
+<!-- <h1> What do want to cook?!</h1>
+
+<div class="all-recipes">
+   <div class="recipe-box">
+       <img src="" /> 
+       <h3></h3>
+       <h3></h3>
+  </div>
+
+</div>
+<button class="button">View more </button> -->
+
+<!-- <app-header-two></app-header-two> -->
+<h1> What is your recipe?!</h1>
+<form [formGroup]="recipeForm" (submit)="save()">
+    <div class="container">
+       <div class="login">
+
+          Food Name:  <input type="text" class="log" formControlName="foodName">
+          <div *ngIf="recipeForm.get('foodName').touched && recipeForm.get('foodName').invalid">
+            <span *ngIf="recipeForm.get('foodName').errors.required" class="error-message">
+              Food name is required!
+            </span>
+            <span *ngIf="recipeForm.get('foodName').errors.maxlength" class="error-message">
+              Food name can not be more than 20 charecters!
+            </span>
+          </div>
+
+          Recipe: <textarea name="" id="r-log" class="log" cols="40" rows="10" formControlName="Recipe"></textarea>
+          <div *ngIf="recipeForm.get('Recipe').touched && recipeForm.get('Recipe').invalid">
+            <span *ngIf="recipeForm.get('Recipe').errors.required" class="error-message">
+              Recipe could not be empty!
+            </span>
+          </div>
+          
+          Country:  <input type="text" class="log" formControlName="country">
+          <div *ngIf="recipeForm.get('country').touched && recipeForm.get('country').invalid">
+            <span *ngIf="recipeForm.get('country').errors.required" class="error-message">
+              Please enter your area!
+            </span>
+          </div>
+
+          Written By: <input type="text" class="log" formControlName="writtenBy">
+          <div *ngIf="recipeForm.get('writtenBy').touched && recipeForm.get('writtenBy').invalid">
+            <span *ngIf="recipeForm.get('writtenBy').errors.required" class="error-message">
+              Please enter your name or Someone who belongs!
+            </span>
+          </div>
+
+          Picture(Optional): <input type="file" name="pic" id="pic"  formControlName="picture"> 
+ 
+          <button  type="submit"  class="button btn"  [disabled]="recipeForm.invalid"> Save </button>
+      
+       </div>
+    </div>
+</form>
+ 
+

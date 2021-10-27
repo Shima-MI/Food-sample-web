@@ -1,0 +1,21 @@
+<form [formGroup]="signinForm" (submit)="onSubmit(signinForm.value)" > 
+
+    <div class="container">
+       <div class="login">
+          User Name:  <input type="text" class="log"  formControlName="userName">
+          <div *ngIf="signinForm.get('userName').touched && signinForm.get('userName').invalid">
+          </div>
+
+        
+          Password: <input type="password" class="log"  formControlName="Password">
+          <div *ngIf="signinForm.get('Password').touched && signinForm.get('Password').invalid">
+          </div>     
+         
+           <button  type="submit"  class="button btn" [disabled]="signinForm.invalid" > Login </button>
+           <button  type="submit"  class="button btn" [disabled]="signinForm.invalid">
+            <a routerLink='/login' routerLinkActive="active" > Register Now </a></button>
+          
+    </div>
+ </div>
+</form>
+

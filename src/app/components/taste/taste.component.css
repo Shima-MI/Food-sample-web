@@ -1,0 +1,50 @@
+.taste{
+    height: 500px;
+    overflow-y: auto;
+}
+
+.containe{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-right: 10px;
+    color: #fff;
+    margin-left: 10px;
+}
+.archive{
+    background-color: rgb(48, 43, 36);
+    list-style: none;
+    overflow-y: auto;
+}
+.img{
+    width: 21%;
+}
+.img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.name{
+    width: 60%;
+    border-right: 3px solid rgb(192, 172, 134);
+    border-left: 3px solid rgb(192, 172, 134);
+    border-left: none;
+    padding: 10px;
+    overflow-y: auto;
+}
+.item{
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+.more{
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(214, 214, 132);
+}
+.moreText{
+    color: #fff;
+}

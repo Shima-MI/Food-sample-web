@@ -1,0 +1,22 @@
+
+<div class="taste">
+<ul class="containe" *ngFor="let item of tastes">
+    <li  class="archive img">
+        <img src="{{item.image}}" alt="">
+            
+    </li>
+    <li  class="archive name">
+      <h3>  {{item.recipe}} <div class="more" (click)="ngAfterViewInit()" > more...</div></h3>
+   </li>
+  
+    <li  class="archive item">
+        <h3> Recipe Name :{{item.recipeName}} </h3>
+         <h3> Date of Broad: {{item.recipeDate}} </h3>
+         <span> Written By: {{item.recipeWriter}} </span>  
+         <span> Tje Number of View :{{item.view}} </span>
+
+    </li> 
+</ul>
+</div>
+
+

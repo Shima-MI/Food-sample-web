@@ -1,0 +1,39 @@
+.about{
+    width: 50%;
+    height: 400px;
+    margin: 20px;
+    border-radius: 5px;
+    position:relative;
+    left: 22%;
+}
+.head{
+    width: 100%;
+    padding: 10px;
+}
+.head h1{
+    margin: 20px;
+    animation-duration: 5s;
+    animation-name: animate;
+    animation-iteration-count: infinite;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.content{
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: -1px 5px 4px 3px rgb(80, 58, 58);
+}
+.content p{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
